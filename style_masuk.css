@@ -1,0 +1,57 @@
+/* Reset dan Body Styling */
+body {
+  background: linear-gradient(to right, #e0ecff, #f7f9fc);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Register */
+.register-card {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+/* Button Google & Facebook */
+.btn-outline-danger,
+.btn-outline-primary {
+  transition: all 0.3s ease;
+}
+.btn-outline-danger:hover {
+  background-color: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+.btn-outline-primary:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+/* Garis Horizontal */
+hr.my-4 {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Form Label */
+.form-label {
+  font-weight: 600;
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+/* Footer */
+footer.bg-dark {
+  background-color: #1f2937 !important;
+}
+
+/* Link Primary */
+.text-primary {
+  color: #3b82f6 !important;
+}

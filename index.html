@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScholarID - Cari Beasiswa Terbaik</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet" />
+  <style>
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-3">ScholarID</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item"><a class="nav-link active text-primary" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="beasiswa.html">Beasiswa</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="persiapan-tes.html">Persiapan Tes Akademik</a></li>
+              <li><a class="dropdown-item" href="kelas-bahasa.html">Kelas Bahasa Asing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="tentang.html">Tentang</a></li>
+          <li class="nav-item">
+            <a href="masuk.html"
+              class="btn btn-primary ms-3 px-4 rounded-pill d-flex align-items-center">
+              <i class="fas fa-user me-2"></i>
+              Masuk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Carousel -->
+  <section class="bg-primary bg-gradient text-white py-5"
+    style="background-image: linear-gradient(to right, #0d6efd, #4db4ff);">
+    <div class="container">
+      <div class="row align-items-center min-vh-50">
+        <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+          <h1 class="fw-bold display-4 mb-4">Unlock Your Future With Us</h1>
+          <p class="fs-5 mb-4 opacity-75">
+            Temukan berbagai beasiswa dari dalam dan luar negeri dengan mudah dan cepat melalui ScholarID
+          </p>
+          <div class="row g-3 justify-content-center justify-content-lg-start">
+            <div class="col-12">
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-0 shadow-sm"
+                  placeholder="Cari beasiswa berdasarkan nama atau jurusan" />
+                <select class="form-select border-0 shadow-sm" style="max-width: 200px;">
+                  <option selected>Kategori</option>
+                  <option>Dalam Negeri</option>
+                  <option>Luar Negeri</option>
+                </select>
+                <button class="btn btn-warning btn-lg px-4 text-dark fw-bold" type="button">
+                  <i class="fas fa-search me-2"></i>Cari
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="bg-white bg-opacity-10 p-4 rounded-4 shadow-lg">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/ilustrasiBeasiswa.jpg" class="d-block w-100"
+                    alt="Ilustrasi pencarian beasiswa">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/lpdp.png" class="d-block w-100" alt="Logo LPDP Scholarship">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/penyerahan.jpeg" class="d-block w-100" alt="Logo LPDP Scholarship">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/eramus.png" class="d-block w-100" alt="Ilustrasi pencarian beasiswa">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/seminar.jpeg" class="d-block w-100" alt="Logo LPDP Scholarship">
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/eropa.jpg" class="d-block w-100" alt="Logo LPDP Scholarship">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kenapa ScholarID -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5 text-primary mb-3">Kenapa ScholarID?</h2>
+        <p class="text-muted fs-6">Keunggulan yang membuat ScholarID menjadi pilihan terbaik</p>
+      </div>
+      <div class="row text-center g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-database text-primary" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Database Terlengkap</h5>
+              <p class="text-muted">
+                Akses ke ribuan beasiswa dari seluruh dunia dengan informasi yang selalu terupdate dan akurat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-bell text-success" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Notifikasi Real-time</h5>
+              <p class="text-muted">
+                Dapatkan pemberitahuan langsung untuk beasiswa baru, deadline, dan informasi penting lainnya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-warning bg-opacity-25 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-users text-warning" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Komunitas Supportif</h5>
+              <p class="text-muted">
+                Bergabung dengan ribuan pencari beasiswa lainnya, berbagi tips, dan saling mendukung.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-info bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-chart-line text-info" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Analisis Peluang</h5>
+              <p class="text-muted">
+                Sistem AI yang menganalisis profil Anda dan memberikan rekomendasi beasiswa yang paling cocok.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-headset text-danger" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Dukungan 24/7</h5>
+              <p class="text-muted">
+                Tim support yang siap membantu Anda kapan saja dalam proses pencarian dan aplikasi beasiswa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card border-0 bg-white shadow-sm rounded-4 h-100">
+            <div class="card-body p-4">
+              <div class="bg-secondary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                style="width: 80px; height: 80px;">
+                <i class="fas fa-shield-alt text-secondary" style="font-size: 2rem;"></i>
+              </div>
+              <h5 class="fw-bold text-dark mb-3">Keamanan Data</h5>
+              <p class="text-muted">
+                Informasi pribadi Anda dijamin aman dengan enkripsi tingkat militer dan kebijakan privasi ketat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beasiswa Unggulan -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-5 text-primary mb-3">Beasiswa Unggulan</h2>
+        <p class="text-muted fs-6">Temukan peluang beasiswa terbaik untuk masa depan cerah</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-primary text-white border-0 py-3">
+              <h5 class="card-title mb-0 fw-bold">Beasiswa LPDP</h5>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-alt text-danger me-2"></i>
+                <small class="text-danger fw-semibold">Deadline: 30 Juni 2025</small>
+              </div>
+              <p class="card-text text-muted">
+                Beasiswa penuh untuk studi S2 dan S3 di dalam dan luar negeri dengan dukungan penuh pemerintah.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-success rounded-pill">Full Funding</span>
+                <button type="button" class="btn btn-outline-primary btn-sm rounded-pill px-3"
+                  data-bs-toggle="modal" data-bs-target="#beasiswaModal" data-jenis="lpdp">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-info text-white border-0 py-3">
+              <h5 class="card-title mb-0 fw-bold">Beasiswa Fulbright</h5>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-alt text-danger me-2"></i>
+                <small class="text-danger fw-semibold">Deadline: 15 Agustus 2025</small>
+              </div>
+              <p class="card-text text-muted">
+                Beasiswa riset dan studi lanjutan di Amerika Serikat dengan program pertukaran budaya.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-primary rounded-pill">USA</span>
+                <button type="button" class="btn btn-outline-info btn-sm rounded-pill px-3"
+                  data-bs-toggle="modal" data-bs-target="#beasiswaModal" data-jenis="fulbright">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+            <div class="card-header bg-warning text-dark border-0 py-3">
+              <h5 class="card-title mb-0 fw-bold">Beasiswa Erasmus+</h5>
+            </div>
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-3">
+                <i class="fas fa-calendar-alt text-danger me-2"></i>
+                <small class="text-danger fw-semibold">Deadline: 10 Juli 2025</small>
+              </div>
+              <p class="card-text text-muted">
+                Beasiswa studi dan pertukaran di Eropa dengan pengalaman multikultural yang luar biasa.
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="badge bg-warning text-dark rounded-pill">Europe</span>
+                <button type="button" class="btn btn-outline-warning btn-sm rounded-pill px-3"
+                  data-bs-toggle="modal" data-bs-target="#beasiswaModal" data-jenis="erasmus">
+                  Lihat Detail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Detail Beasiswa -->
+  <div class="modal fade" id="beasiswaModal" tabindex="-1" aria-labelledby="beasiswaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="judulModal">Detail Beasiswa</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="isiModal">
+          <!-- Konten akan dimuat dinamis -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Daftar Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="text-primary fw-bold mb-3">ScholarID</h5>
+          <p class="text-light opacity-75">
+            Platform terpercaya untuk mencari beasiswa dalam dan luar negeri dengan mudah dan cepat.
+          </p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <div class="d-flex justify-content-lg-end justify-content-center gap-3 mb-3">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center">
+        <p class="mb-0 text-light opacity-75">&copy; 2025 ScholarID. Semua hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="script.js"></script>
+</body>
+</html>

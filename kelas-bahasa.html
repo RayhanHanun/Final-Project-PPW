@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ScholarID - Kelas Bahasa Asing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet" />
+  <style>
+    .card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-3" href="#">ScholarID</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item"><a class="nav-link active text-dark" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="beasiswa.html">Beasiswa</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="persiapan-tes.html">Persiapan Tes Akademik</a></li>
+              <li><a class="dropdown-item" href="#">Kelas Bahasa Asing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="tentang.html">Tentang</a></li>
+          <li class="nav-item">
+            <a href="masuk.html" class="btn btn-primary ms-3 px-4 rounded-pill d-flex align-items-center">
+              <i class="fas fa-user me-2"></i>
+              Masuk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Kelas Bahasa Asing -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-primary fw-bold mb-4 text-center">Kelas Bahasa Asing</h2>
+    <div class="row g-4">
+      <!-- Jepang -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fab fa-fly text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Jepang</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Kelas bahasa Jepang dari dasar hingga lancar dengan pelatih native speaker dan metode interaktif.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="jepang">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Korea -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-flag text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Korea</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Belajar bahasa Korea mulai dari Hangeul, tata bahasa, hingga percakapan sehari-hari.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="korea">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Arab -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-language text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Arab</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Pelajaran bahasa Arab untuk pemula hingga mahir, termasuk tulisan Arab dan struktur kalimat.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="arab">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Prancis -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-euro-sign text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Prancis</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Les bahasa Prancis untuk berbagai level dengan fokus pada listening, speaking, dan grammar.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="prancis">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mandarin -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-pen text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Mandarin</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Pembelajaran bahasa Mandarin dengan pendekatan praktis untuk kehidupan akademik dan bisnis.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="mandarin">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jerman -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card border-0 shadow-sm h-100 rounded-4">
+          <div class="card-body p-4 d-flex flex-column">
+            <div class="d-flex align-items-center mb-3">
+              <i class="fas fa-university text-primary me-3 fa-2x"></i>
+              <h5 class="card-title fw-bold mb-0">Bahasa Jerman</h5>
+            </div>
+            <p class="card-text text-muted flex-grow-1">
+              Kelas bahasa Jerman untuk keperluan studi dan pekerjaan dengan kurikulum sesuai standar Eropa.
+            </p>
+            <div class="text-end mt-auto">
+              <button class="btn btn-outline-primary rounded-pill w-auto px-3 py-2" data-bs-toggle="modal" data-bs-target="#kelasModal" data-jenis="jerman">
+                Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Modal Detail Kelas -->
+  <div class="modal fade" id="kelasModal" tabindex="-1" aria-labelledby="kelasModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title" id="judulModal">Detail Kelas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="isiModal">
+          <!-- Konten akan dimuat dinamis -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Daftar Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="text-primary fw-bold mb-3">ScholarID</h5>
+          <p class="text-light opacity-75">Platform terpercaya untuk mencari beasiswa dalam dan luar negeri dengan mudah dan cepat.</p>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <div class="d-flex justify-content-lg-end justify-content-center gap-3 mb-3">
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center">
+        <p class="mb-0 text-light opacity-75">&copy; 2025 ScholarID. Semua hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+  <script src="detail-kelas.js"></script>
+
+</body>
+</html>

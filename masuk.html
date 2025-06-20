@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daftar - ScholarID</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"  rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  rel="stylesheet" />
+  <link rel="stylesheet" href="style_masuk.css" /> <!-- Link ke file CSS -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-3" href="#">ScholarID</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fw-semibold">
+          <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="beasiswa.html">Beasiswa</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Program
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="persiapan-tes.html">Persiapan Tes Akademik</a></li>
+              <li><a class="dropdown-item" href="kelas-bahasa.html">Kelas Bahasa Asing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-dark" href="tentang.html">Tentang</a></li>
+          <li class="nav-item">
+            <a href="masuk.html" class="btn btn-primary ms-3 px-4 rounded-pill d-flex align-items-center">
+              <i class="fas fa-user me-2"></i>
+              Masuk
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Form Daftar -->
+  <section class="py-5">
+    <div class="container">
+      <div class="card register-card bg-white">
+        <div class="card-body">
+          <h3 class="fw-bold text-center text-primary mb-4">Buat Akun Baru</h3>
+
+          <!-- Tombol Login dengan Google atau Lainnya -->
+          <div class="d-grid gap-2 mb-3">
+            <button class="btn btn-outline-danger d-flex align-items-center justify-content-center" type="button">
+              <i class="fab fa-google me-2"></i> Daftar dengan Google
+            </button>
+            <button class="btn btn-outline-primary d-flex align-items-center justify-content-center" type="button">
+              <i class="fab fa-facebook-f me-2"></i> Daftar dengan Facebook
+            </button>
+          </div>
+
+          <hr class="my-4">
+
+          <!-- Form Registrasi -->
+          <form>
+            <div class="mb-3">
+              <label for="namaLengkap" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan email aktif" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Kata Sandi</label>
+              <input type="password" class="form-control" id="password" placeholder="Buat kata sandi" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Konfirmasi Kata Sandi</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Ulangi kata sandi" required>
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="terms" required>
+              <label class="form-check-label" for="terms">
+                Saya setuju dengan <a href="#" class="text-primary">Syarat & Ketentuan</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Daftar Sekarang</button>
+          </form>
+
+          <p class="text-center mt-3">
+            Sudah punya akun? <a href="#" class="text-primary">Login disini</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 ScholarID. Semua hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
